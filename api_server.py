@@ -71,7 +71,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",  # Docusaurus dev server
-        "https://humanoid-robotics-ai-textbook.vercel.app/",
+        "https://humanoid-robotics-ai-textbook.vercel.app",  # Production URL (removed trailing slash)
         os.getenv("FRONTEND_URL", "*")  # Production URL from env or wildcard
     ],
     allow_credentials=True,
