@@ -1,3 +1,9 @@
  google.generativeai
  google-genai
-openai
+openai>=1.0.0
+fastembed
+fastapi
+uvicorn[standard]
+pydantic
+python-dotenv
+qdrant-client
